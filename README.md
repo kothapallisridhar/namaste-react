@@ -1,5 +1,10 @@
 # Namaste React
 
+- crossorigin
+- npm
+- Parcel
+-
+
 # Parcel
 
 - Dev Build
