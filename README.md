@@ -1,1 +1,1 @@
-# react app
+# Namaste React
