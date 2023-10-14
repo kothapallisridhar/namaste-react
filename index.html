@@ -10,11 +10,22 @@
       <h1>Sri Satchidananda Sadguru Sainath Maharaj Ki Jai!</h1>
       <h1>Satguru Sri Sainathuni Sarath Babuji Ki Jai!</h1>
     </div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
     <script>
-      const root = document.getElementById("root");
-      const h2 = document.createElement("h2");
-      h2.innerHTML = "Hello JavaScript";
-      root.appendChild(h2);
+      const heading = React.createElement(
+        "h1",
+        {},
+        "Sri Satchidananda Sadguru Sainath Maharaj Ki Jai!\nSadguru Sri Sainathuni Sarath Babuji Ki Jai!!"
+      );
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(heading);
     </script>
   </body>
 </html>
