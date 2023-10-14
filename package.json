@@ -1,0 +1,19 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "Namaste React App",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kothapallisridhar/namaste-react.git"
+  },
+  "author": "Sridhar Kothapalli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kothapallisridhar/namaste-react/issues"
+  },
+  "homepage": "https://github.com/kothapallisridhar/namaste-react#readme"
+}
