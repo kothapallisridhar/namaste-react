@@ -23,9 +23,13 @@ const Title = () => {
   return <h1>Title Component</h1>;
 };
 const Heading = () => {
+  // various ways of calling Components
   return (
     <div id="container">
+      {300 + 700}
       <Title />
+      {Title()}
+      <Title></Title>
       <h1>React Functional Component</h1>
     </div>
   );
