@@ -9,11 +9,26 @@ import ReactDOM from "react-dom/client";
 // JSX (transpiled before it reaches the JS) - PARCEL - Babel
 // JSX => Babel transpiles it to React.createElement => ReactElement-JS Object => HTMLElement(render)
 
+// React Element
 const jsxHeading = (
   <h1 className="head" tabIndex="5">
     Namaste React using JSX
   </h1>
 );
 
+// React Component => is a JS function which returns a piece of JSX code (i.e. React Element)
+// Class based Component - OLD
+// Functional Component - NEW
+const Title = () => {
+  return <h1>Title Component</h1>;
+};
+const Heading = () => {
+  return (
+    <div id="container">
+      <Title />
+      <h1>React Functional Component</h1>
+    </div>
+  );
+};
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(jsxHeading);
+root.render(<Heading />);
