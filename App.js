@@ -34,5 +34,36 @@ const Heading = () => {
     </div>
   );
 };
+
+const Body = () => {
+  return <div className="body"></div>;
+};
+const Header = () => {
+  return (
+    <div className="header">
+      <div className="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy74aAasUvsShzcGg5nTMO9Nd34w09s9wmQg&usqp=CAU" />
+      </div>
+      <div className="menu">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Cart</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+const Footer = () => {
+  return <div className="footer"></div>;
+};
+const Layout = () => {
+  return (
+    <div className="layout">
+      <Header />
+    </div>
+  );
+};
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Heading />);
+root.render(<Layout />);
