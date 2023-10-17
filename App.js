@@ -36,7 +36,13 @@ const Heading = () => {
 };
 
 const Body = () => {
-  return <div className="body"></div>;
+  return (
+    <div className="body">
+      <RestroCard />
+      <RestroCard />
+      <RestroCard />
+    </div>
+  );
 };
 const Header = () => {
   return (
@@ -55,6 +61,16 @@ const Header = () => {
     </div>
   );
 };
+const RestroCard = () => {
+  return (
+    <div className="card">
+      <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/x4uyxvihmg8qa3pddkgf" />
+      <h4>Meghana Foods</h4>
+      <h5>Indian, South Indian, Biryani</h5>
+      <h5>4.4 stars</h5>
+    </div>
+  );
+};
 const Footer = () => {
   return <div className="footer"></div>;
 };
@@ -62,6 +78,8 @@ const Layout = () => {
   return (
     <div className="layout">
       <Header />
+      <Body />
+      <Footer />
     </div>
   );
 };
