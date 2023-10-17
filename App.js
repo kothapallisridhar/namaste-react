@@ -38,9 +38,22 @@ const Heading = () => {
 const Body = () => {
   return (
     <div className="body">
-      <RestroCard />
-      <RestroCard />
-      <RestroCard />
+      <RestaurantCard
+        image="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/x4uyxvihmg8qa3pddkgf"
+        resName="Meghana Foods"
+        cuisine="South Indian, Asian"
+        rating="4.4 "
+      />
+      <RestaurantCard
+        image="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/emlehbuwgsmryxhwzhvq"
+        resName="Lavonne"
+        cuisine="Bakery, Desserts"
+      />
+      <RestaurantCard
+        image="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/v9fczzlua1wnrx63fh1g"
+        resName="Soul Rasa"
+        cuisine="Indian, Healthy Food"
+      />
     </div>
   );
 };
@@ -61,12 +74,12 @@ const Header = () => {
     </div>
   );
 };
-const RestroCard = () => {
+const RestaurantCard = ({ image, resName, cuisine }) => {
   return (
     <div className="card">
-      <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/x4uyxvihmg8qa3pddkgf" />
-      <h4>Meghana Foods</h4>
-      <h5>Indian, South Indian, Biryani</h5>
+      <img src={image} />
+      <h4>{resName}</h4>
+      <h5>{cuisine}</h5>
       <h5>4.4 stars</h5>
     </div>
   );
