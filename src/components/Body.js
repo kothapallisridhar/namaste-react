@@ -1,4 +1,4 @@
-import Body from "./RestaurantCard";
+import RestaurantCard from "./RestaurantCard";
 
 const Body = () => {
   return (
