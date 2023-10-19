@@ -26,16 +26,16 @@
   flex-wrap: wrap;
 }
 .card {
-  width: 100px;
+  width: 140px;
   margin: 5px;
   padding: 10px;
   background-color: azure;
-  line-height: 90%;
+  line-height: 100%;
 }
 .card:hover {
   border: 1px solid gray;
   cursor: pointer;
 }
 .card > img {
-  width: 100px;
+  width: 140px;
 }
