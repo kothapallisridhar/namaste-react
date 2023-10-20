@@ -39,3 +39,7 @@
 .card > img {
   width: 140px;
 }
+
+.filter-btn {
+  margin: 5px;
+}
