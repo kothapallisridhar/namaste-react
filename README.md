@@ -24,3 +24,15 @@
 - HTTPS
 - Tree Shaking -remove unused code
 - Different DEV and PROD bundles
+
+# Default export / import
+
+export default resList;
+import resList from "../utils/mockdata";
+
+# Named export / import
+
+export const LOGO_URL =
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy74aAasUvsShzcGg5nTMO9Nd34w09s9wmQg&usqp=CAU";
+
+import { LOGO_URL } from "../utils/constants";
