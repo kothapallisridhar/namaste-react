@@ -5,8 +5,13 @@ import { useState, useEffect } from "react";
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState(resList);
   useEffect(() => {
-    console.log("useEffect called");
+    fetchData();
   }, []);
+
+  const fetchData = () => {
+    const data = fetch();
+  };
+
   console.log("Body rendered");
   return (
     <div>
