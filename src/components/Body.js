@@ -1,9 +1,13 @@
 import RestaurantCard from "./RestaurantCard";
-import resList from "../utils/mockdata";
 import { useState, useEffect } from "react";
+import Shimmer from "./Shimmer";
 
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   const fetchData = async () => {
     try {
@@ -21,9 +25,10 @@ const Body = () => {
       console.log(err);
     }
   };
-  useEffect(() => {
-    fetchData();
-  }, []);
+  console.log("List of Restaurants", listOfRestaurants);
+  if (listOfRestaurants.length === 0) {
+    return <Shimmer />;
+  }
 
   //console.log("Body rendered");
   return (

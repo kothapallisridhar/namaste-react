@@ -27,7 +27,7 @@
 }
 .card {
   width: 200px;
-  height: 400px
+  height: 400px;
   margin: 5px;
   padding: 10px;
   background-color: azure;
@@ -47,10 +47,11 @@
 
 .shimmer-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .shimmer-card {
-  margin: 20px;
+  margin: 5px;
   width: 200px;
   height: 400px;
   background-color: #f0f0f0;
