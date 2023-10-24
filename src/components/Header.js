@@ -2,7 +2,7 @@ import { LOGO_URL } from "../utils/constants";
 import { useState, useEffect } from "react";
 
 const Header = () => {
-  // never use your useState hook inside a condition
+  // never use your useState hook inside a condition, inside a function or inside loops
   const [btnName, setBtnName] = useState("Login");
   console.log("Header render");
 
