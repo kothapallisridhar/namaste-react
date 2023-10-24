@@ -51,9 +51,10 @@
 }
 
 .shimmer-card {
-  margin: 5px;
   width: 200px;
   height: 400px;
+  margin: 5px;
+  padding: 10px;
   background-color: #f0f0f0;
 }
 
