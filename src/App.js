@@ -3,6 +3,9 @@ import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
 import Footer from "./components/Footer";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // const heading = React.createElement("div", { id: "parent" }, [
 //   React.createElement("h1", { id: "child1" }, "Saibaba Sarath Babuji!"),
@@ -38,7 +41,7 @@ const Heading = () => {
   );
 };
 
-const Layout = () => {
+const AppLayout = () => {
   return (
     <div className="layout">
       <Header />
@@ -47,5 +50,21 @@ const Layout = () => {
     </div>
   );
 };
+
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppLayout />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/about",
+    element: <About />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Layout />);
+root.render(<RouterProvider router={appRouter} />);
