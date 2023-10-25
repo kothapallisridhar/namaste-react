@@ -1,8 +1,8 @@
 const User = () => {
   return (
-    <div>
-      <h2>Name: Sridhar</h2>
-      <h3>Location: Munich</h3>
+    <div className="user-card">
+      <h3>Name: Sridhar</h3>
+      <h4>Location: Munich</h4>
     </div>
   );
 };
