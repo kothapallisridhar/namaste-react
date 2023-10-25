@@ -6,7 +6,6 @@ const About = () => {
     <div>
       <h1>About us</h1>
       <h2>About us page</h2>
-      <User name={"Sridhar"} location={"Munich"} component={"Function"} />
       <UserClass name={"Sridhar"} location={"Munich"} component={"Class"} />
     </div>
   );
