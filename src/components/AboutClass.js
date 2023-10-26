@@ -8,12 +8,16 @@ class AboutClass extends React.Component {
   }
   componentDidMount() {
     console.log("component did mount");
+    this.timer = setInterval(() => {
+      console.log("Namaste React OP");
+    }, 1000);
   }
   componentDidUpdate() {
     console.log("component did update");
   }
   componentWillUnmount() {
     console.log("component will unmount");
+    clearInterval(this.timer);
   }
   render() {
     console.log("render");
