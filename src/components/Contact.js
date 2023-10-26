@@ -6,6 +6,7 @@ const Contact = () => {
       console.log("Namaste React OP - in useEffect");
     }, 1000);
     return () => {
+      console.log("useEffect return");
       clearInterval(timer);
     };
   }, []);

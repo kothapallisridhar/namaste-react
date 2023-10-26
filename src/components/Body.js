@@ -17,9 +17,9 @@ const Body = () => {
         "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING"
       );
       const json = await data.json();
-      console.log(
-        json.data.cards[2].card.card.gridElements.infoWithStyle.restaurants
-      );
+      // console.log(
+      //   json.data.cards[2].card.card.gridElements.infoWithStyle.restaurants
+      // );
       setListOfRestaurants(
         json.data.cards[2].card.card.gridElements.infoWithStyle.restaurants
       );
@@ -30,7 +30,7 @@ const Body = () => {
       console.log(err);
     }
   };
-  console.log("List of Restaurants", listOfRestaurants);
+  //console.log("List of Restaurants", listOfRestaurants);
   if (listOfRestaurants.length === 0) {
     return <Shimmer />;
   }
