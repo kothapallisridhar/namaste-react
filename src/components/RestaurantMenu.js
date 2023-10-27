@@ -16,14 +16,10 @@ const RestaurantMenu = () => {
     setResInfo(json.data);
   };
 
-  // const { name, cuisines, costForTwoMessage } =
-  //   resInfo?.cards[0]?.card?.card?.info;
-  const name = resInfo?.cards[0]?.card?.card?.info?.name;
-  const cuisines = resInfo?.cards[0]?.card?.card?.info?.cuisines;
-  const costForTwoMessage =
-    resInfo?.cards[0]?.card?.card?.info?.costForTwoMessage;
-
   if (resInfo === null) return <Shimmer />;
+
+  const { name, cuisines, costForTwoMessage } =
+    resInfo?.cards[0]?.card?.card?.info;
 
   return (
     <div className="menu">
