@@ -38,6 +38,10 @@ const Body = () => {
     return <Shimmer />;
   }
 
+  if (onlineStatus === false) {
+    return <h2>You're offline! Please check your internet connection.</h2>;
+  }
+
   //console.log("Body rendered");
   return (
     <div>
