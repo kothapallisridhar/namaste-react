@@ -16,9 +16,7 @@ import RestaurantMenu from "./components/RestaurantMenu";
 // On Demand Loading
 // Dynamic Import
 
-const Grocery = lazy(() => {
-  import("./components/Grocery");
-});
+const Grocery = lazy(() => import("./components/Grocery"));
 
 // const heading = React.createElement("div", { id: "parent" }, [
 //   React.createElement("h1", { id: "child1" }, "Saibaba Sarath Babuji!"),
@@ -87,7 +85,11 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/grocery",
-        element: <Grocery />,
+        element: (
+          <Suspense fallback={<h2>Loading...</h2>}>
+            <Grocery />
+          </Suspense>
+        ),
       },
     ],
   },
