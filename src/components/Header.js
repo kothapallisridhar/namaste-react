@@ -1,10 +1,12 @@
 import { LOGO_URL } from "../utils/constants";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Header = () => {
   // never use your useState hook inside a condition, inside a function or inside loops
   const [btnName, setBtnName] = useState("Login");
+  const onlineStatus = useOnlineStatus();
   console.log("Header render");
 
   // if no dependency array => useEffect is called on every render
@@ -21,6 +23,7 @@ const Header = () => {
       </div>
       <div className="menu">
         <ul>
+          <li>Online Status: {onlineStatus ? "🟢" : "🔴"}</li>
           <li>
             <Link to="/">Home</Link>
           </li>
