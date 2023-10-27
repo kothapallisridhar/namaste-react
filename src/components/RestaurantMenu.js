@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
+import { useParams } from "react-router-dom";
+
 const RestaurantMenu = () => {
   const [resInfo, setResInfo] = useState(null);
 
   useEffect(() => {
     fetchMenu();
   }, []);
+  const { resId } = useParams();
 
   const fetchMenu = async () => {
     const data = await fetch(
@@ -33,7 +36,9 @@ const RestaurantMenu = () => {
       <h3>Menu</h3>
       <ul>
         {itemCards.map((item) => (
-          <li>{item.card.info.name}</li>
+          <li key={item.card.info.id}>
+            {item.card.info.name} - Rs.{item.card.info.price / 100}
+          </li>
         ))}
       </ul>
     </div>
