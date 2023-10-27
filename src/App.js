@@ -9,6 +9,13 @@ import Error from "./components/Error";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import RestaurantMenu from "./components/RestaurantMenu";
 
+// Chunking
+// Code Splitting
+// Dynamic Bundling
+// Lazy Loading
+// On Demand Loading
+// Dynamic Import
+
 // const heading = React.createElement("div", { id: "parent" }, [
 //   React.createElement("h1", { id: "child1" }, "Saibaba Sarath Babuji!"),
 //   React.createElement("h2", { id: "child2" }, "Shirdi"),
