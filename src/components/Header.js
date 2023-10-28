@@ -17,12 +17,12 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="flex">
+    <div className="flex justify-between">
       <div className="logo">
-        <img src={LOGO_URL} />
+        <img src={LOGO_URL} className="w-28" />
       </div>
       <div className="menu">
-        <ul>
+        <ul className="flex p-4 m-4">
           <li>Online Status: {onlineStatus ? "🟢" : "🔴"}</li>
           <li>
             <Link to="/">Home</Link>
