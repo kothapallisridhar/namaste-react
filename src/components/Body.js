@@ -45,17 +45,18 @@ const Body = () => {
   //console.log("Body rendered");
   return (
     <div>
-      <div className="filter">
-        <div className="search">
+      <div className="flex items-center">
+        <div className="">
           <input
             type="text"
-            className="search-box"
+            className="border border-black rounded-md m-4 p-[2px]"
             value={searchText}
             onChange={(e) => {
               setSearchText(e.target.value);
             }}
           />
           <button
+            className="bg-green-200 rounded-md px-4 py-1"
             onClick={() => {
               console.log(searchText);
               const filteredRestaurants = listOfRestaurants.filter((res) =>
@@ -68,7 +69,7 @@ const Body = () => {
           </button>
         </div>
         <button
-          className="filter-btn"
+          className="bg-orange-300 rounded-md m-4 px-4 py-1"
           onClick={() => {
             const filteredList = listOfRestaurants.filter(
               (restaurant) => restaurant.info.avgRating > 4.3
