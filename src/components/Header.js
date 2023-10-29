@@ -17,7 +17,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="flex justify-between bg-pink-100 shadow-lg mb-4 items-center">
+    <div className="flex justify-between bg-lime-50 shadow-md mb-4 items-center">
       <div>
         <img src={LOGO_URL} className="w-28" />
       </div>
