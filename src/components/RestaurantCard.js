@@ -4,7 +4,7 @@ const RestaurantCard = (props) => {
   //console.log(resCard);
   const { resData } = props;
 
-  console.log("resData", resData);
+  //console.log("resData", resData);
   return (
     <div className="bg-gray-100 w-[250px] m-4 p-4 rounded-lg shadow-md hover:bg-slate-200">
       <img
