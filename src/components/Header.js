@@ -13,6 +13,7 @@ const Header = () => {
   console.log(loggedInUser);
   // Subscribing to the store using a Selector
   const cartItems = useSelector((store) => store.cart.items);
+  console.log(cartItems);
   console.log("Header render");
 
   // if no dependency array => useEffect is called on every render
