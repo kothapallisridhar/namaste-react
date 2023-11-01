@@ -12,7 +12,7 @@ const Header = () => {
   const { loggedInUser } = useContext(UserContext);
   console.log(loggedInUser);
   // Subscribing to the store using a Selector
-  const cart = useSelector((store) => store.cart.items);
+  const cartItems = useSelector((store) => store.cart.items);
   console.log("Header render");
 
   // if no dependency array => useEffect is called on every render
@@ -42,7 +42,7 @@ const Header = () => {
           <li className="px-4">
             <Link to="/contact">Contact</Link>
           </li>
-          <li className="px-4 font-bold">Cart (0 items)</li>
+          <li className="px-4 font-bold">Cart ({cartItems.length} items)</li>
           <button
             className="login-btn"
             onClick={() => {
