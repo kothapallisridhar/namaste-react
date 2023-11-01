@@ -36,6 +36,9 @@ const Body = () => {
       console.log(err);
     }
   };
+
+  const { loggedInUser, setUserName } = useContext(UserContext);
+
   //console.log("List of Restaurants", listOfRestaurants);
   if (listOfRestaurants.length === 0) {
     return <Shimmer />;
@@ -82,7 +85,16 @@ const Body = () => {
         >
           Top rated Restaurants
         </button>
+        <div className="search m-4 p-4 flex items-center">
+          <label className="p-2">UserName </label>
+          <input
+            className="border border-black p-2 rounded-lg"
+            value={loggedInUser}
+            onChange={(e) => setUserName(e.target.value)}
+          />
+        </div>
       </div>
+
       <div className="flex flex-wrap">
         {filteredRestaurants.map((restaurant) => (
           <Link
