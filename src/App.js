@@ -8,6 +8,8 @@ import Contact from "./components/Contact";
 import Error from "./components/Error";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import RestaurantMenu from "./components/RestaurantMenu";
+import { useState, useEffect } from "react";
+import UserContext from "./utils/UserContext";
 
 // Chunking
 // Code Splitting
@@ -53,11 +55,22 @@ const Heading = () => {
 };
 
 const AppLayout = () => {
+  const [userName, setUserName] = useState();
+  // authentication
+  useEffect(() => {
+    // make an API call and send User name and Password
+    const data = {
+      name: "Sridhar Kothapalli",
+    };
+    setUserName(data.name);
+  }, []);
   return (
-    <div className="layout">
-      <Header />
-      <Outlet />
-    </div>
+    <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
+      <div className="layout">
+        <Header />
+        <Outlet />
+      </div>
+    </UserContext.Provider>
   );
 };
 
