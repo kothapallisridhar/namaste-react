@@ -3,6 +3,7 @@ import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   // never use your useState hook inside a condition, inside a function or inside loops
@@ -10,6 +11,8 @@ const Header = () => {
   const onlineStatus = useOnlineStatus();
   const { loggedInUser } = useContext(UserContext);
   console.log(loggedInUser);
+  // Subscribing to the store using a Selector
+  const cart = useSelector((store) => store.cart.items);
   console.log("Header render");
 
   // if no dependency array => useEffect is called on every render
@@ -39,7 +42,7 @@ const Header = () => {
           <li className="px-4">
             <Link to="/contact">Contact</Link>
           </li>
-          <li className="px-4">Cart</li>
+          <li className="px-4 font-bold">Cart (0 items)</li>
           <button
             className="login-btn"
             onClick={() => {
