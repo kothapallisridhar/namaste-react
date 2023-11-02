@@ -59,3 +59,9 @@ Diff algorithm
 - Slice (cartSlice)
 - dispatch(action)
 - Selector
+
+# Types of Testing (Developer)
+
+- Unit Testing
+- Integration Testing
+- End to End Testing (E2E)
