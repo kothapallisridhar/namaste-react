@@ -65,3 +65,10 @@ import { LOGO_URL } from "../utils/constants";
 - Unit Testing
 - Integration Testing
 - End to End Testing (E2E)
+
+# Setting up Testing in our App
+
+- Install React Testing Library
+- Install jest
+- Install Babel dependencies
+- Configure Babel
