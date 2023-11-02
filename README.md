@@ -72,3 +72,4 @@ import { LOGO_URL } from "../utils/constants";
 - Install jest
 - Install Babel dependencies
 - Configure Babel
+- Configure Parcel Config file to disable default Babel transpilation
