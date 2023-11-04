@@ -73,4 +73,5 @@ import { LOGO_URL } from "../utils/constants";
 - Install Babel dependencies
 - Configure Babel
 - Configure Parcel config file to disable default Babel transpilation
-- Jest Configuration
+- Jest Configuration (npx jest --init)
+- Install jsdom library
