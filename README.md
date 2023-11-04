@@ -75,3 +75,6 @@ import { LOGO_URL } from "../utils/constants";
 - Configure Parcel config file to disable default Babel transpilation
 - Jest Configuration (npx jest --init)
 - Install jsdom library
+- Install @babel/preset-react - to make JSX work in test cases
+- Include @babel/preset-react inside my babel config
+- Install @testing-library/jest-dom (npm i -D @testing-library/jest-dom)
