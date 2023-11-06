@@ -6,7 +6,10 @@ const RestaurantCard = (props) => {
 
   console.log("resData", resData);
   return (
-    <div className="bg-gray-100 w-[250px] m-4 p-4 rounded-lg shadow-md hover:bg-slate-200">
+    <div
+      data-testid="resCard"
+      className="bg-gray-100 w-[250px] m-4 p-4 rounded-lg shadow-md hover:bg-slate-200"
+    >
       <img
         src={CDN_URL + resData?.info.cloudinaryImageId}
         className="rounded-lg aspect-square"
