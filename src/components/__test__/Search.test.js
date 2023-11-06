@@ -29,3 +29,28 @@ it("Should search Res List for burger text input", async () => {
   const cardsAfterSearch = screen.getAllByTestId("resCard");
   expect(cardsAfterSearch.length).toBe(2);
 });
+
+it("Should filter top rated Restaurants", async () => {
+  global.fetch = jest.fn(() => {
+    return Promise.resolve({
+      json: () => {
+        return Promise.resolve(MOCK_DATA);
+      },
+    });
+  });
+  await act(async () =>
+    render(
+      <BrowserRouter>
+        <Body />
+      </BrowserRouter>
+    )
+  );
+  const cardsBeforefilter = screen.getAllByTestId("resCard");
+  expect(cardsBeforefilter.length).toBe(20);
+  const topRatedRestaurantsBtn = screen.getByRole("button", {
+    name: "Top rated Restaurants",
+  });
+  fireEvent.click(topRatedRestaurantsBtn);
+  const cardsAfterFilter = screen.getAllByTestId("resCard");
+  expect(cardsAfterFilter.length).toBe(4);
+});
