@@ -26,6 +26,6 @@ it("Should search Res List for burger text input", async () => {
   fireEvent.change(searchInput, { target: { value: "burger" } });
   fireEvent.click(searchBtn);
   // screen should load 2 cards
-  const cards = screen.getAllByTestId("resCard");
-  expect(cards.length).toBe(2);
+  const cardsAfterSearch = screen.getAllByTestId("resCard");
+  expect(cardsAfterSearch.length).toBe(2);
 });
