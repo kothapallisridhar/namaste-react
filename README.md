@@ -1,3 +1,4 @@
+# Namaste React 🚀
 package.json: is a configuration file
 packages: are dependencies
 
@@ -9,3 +10,9 @@ npm install -D parcel  => -D indicates dev dependencies
 
 Transitive dependencies: Dependencies of dependencies
 
+# Parcel
+- Dev Build
+- Local Server
+- HMR = Hot Module Replacement
+- File Watching Algorithm - written in C++
+ 
