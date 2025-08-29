@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;AAIA;;;;AAIA","sources":["index.css"],"sourcesContent":["#heading {\n    color: red;\n}\n\nh1 {\n    color: greenyellow;\n}\n\nh2 {\n    color: skyblue;\n}"],"names":[],"version":3,"file":"namaste-react.9e4c6fd2.css.map","sourceRoot":"/__parcel_source_root/"}

@@ -14,7 +14,7 @@
   "license": "ISC",
   "author": "Sridhar Kothapalli",
   "type": "commonjs",
-  "main": "App.js",
+  "default": "App.js",
   "scripts": {
     "test": "jest"
   },
