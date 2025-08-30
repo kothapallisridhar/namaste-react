@@ -31,3 +31,6 @@ Transitive dependencies: Dependencies of dependencies
 - Tree Shaking - remove unused code
 - Transpilation
 - Different Dev and Prod bundles
+
+# JSX
+- JSX => Babel transpiles it to React.createElement => ReactElement-JS Object => HTMLElement(render)
