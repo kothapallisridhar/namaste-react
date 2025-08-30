@@ -15,4 +15,11 @@ Transitive dependencies: Dependencies of dependencies
 - Local Server
 - HMR = Hot Module Replacement
 - File Watching Algorithm - written in C++
- 
+- Caching - Faster Builds
+- Image optimization
+- Minification
+- Buldling
+- Compress 
+- Consistent Hashing
+- Code Splitting
+- Differential Bundling
