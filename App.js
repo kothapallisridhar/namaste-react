@@ -1,30 +1,58 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { jsx } from 'react/jsx-runtime';
 
-const elem = <span>React Element</span>
+/**
+ * Header
+ *  - Logo
+ *  - Nav items
+ * Body
+ *  - Search
+ *  - Restaurant Container
+ *    - RestaurantCard
+ * Footer
+ *  - Copyright
+ *  - Links
+ *  - Address
+ *  - Contact
+ */
 
-const Title = () => {
-    return <h1 className='head' tabIndex='5'>
-        {elem}
-        React using JSX 🥇
-        </h1>
+const Header = () => {
+    return (
+        <div className='header'>
+            <div className='logo-container'>
+                <img className='logo' src='https://cdn.dribbble.com/userupload/23345404/file/original-7048504bab53c9a9698088e1e76ba0de.png?resize=752x&vertical=center'/>
+            </div>
+            <div className='nav-items'>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact us</li>
+                    <li>Cart</li>
+                </ul>
+            </div>
+        </div>
+    )
 }
 
-const number = 10000;
+const Body = () => {
+    return (
+        <div className='body'>
+            <div className='search'>Search</div>
+            <div className='res-container'>
+                
+            </div>
+        </div>
+    )
+}
 
-// Component Composition
-const HeadingComponent = () => (
-    <div id='container'>
-     <h2>{number}</h2>     
-     {Title()}
-     <Title />
-     <Title></Title>
-     <h1 className='heading'>React Functional Component 🚀</h1>    
-    </div> 
-);
+const AppLayout = () => {
+    return (
+      <div className='app'>
+        <Header />
+      </div>
+    )    
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-//root.render(HeadingComponent());
-root.render(<HeadingComponent />);
+root.render(<AppLayout />);

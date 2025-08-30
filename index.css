@@ -1,11 +1,26 @@
-#heading {
-    color: red;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
 }
 
-h1 {
-    color: greenyellow;
+.logo {
+    width: 180px;
 }
 
-h2 {
-    color: skyblue;
+.nav-items {
+    padding: 0px 20px;
+}
+
+.nav-items > ul {
+    font-size: 24px;
+    display: flex;
+    padding: 0px 20px;
+    list-style-type: none;
+}
+
+.nav-items > ul > li {
+    padding: 10px;
+    margin: 10px;
 }
