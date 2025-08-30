@@ -10,10 +10,11 @@ npm install -D parcel  => -D indicates dev dependencies
 
 Transitive dependencies: Dependencies of dependencies
 
-# Parcel
+# Parcel 
+- (read on parceljs.org)
 - Dev Build
 - Local Server
-- HMR = Hot Module Replacement
+- HMR = Hot Module Reloading
 - File Watching Algorithm - written in C++
 - Caching - Faster Builds
 - Image optimization
@@ -22,4 +23,11 @@ Transitive dependencies: Dependencies of dependencies
 - Compress 
 - Consistent Hashing
 - Code Splitting
-- Differential Bundling
+- Differential Bundling - support older browsers
+- Diagnostics
+- Error Handling
+- HTTPS
+- Lazy dev builds
+- Tree Shaking - remove unused code
+- Transpilation
+- Different Dev and Prod bundles
